@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player one"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="90dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player two"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="95dp"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tvScoreOne"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="200dp"
+            android:textSize="23dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/tvScoreTwo"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Player one is winning"
+        android:id="@+id/tvWinner"/>
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_margin="5dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:backgroundTint="@color/field_background"
+            android:text=""
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_margin="5dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:backgroundTint="@color/field_background"
+            android:text=""
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_margin="5dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:backgroundTint="@color/field_background"
+            android:text=""
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_margin="5dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:backgroundTint="@color/field_background"
+            android:text=""
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_margin="3dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:backgroundTint="@color/field_background"
+            android:text=""
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_margin="5dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:backgroundTint="@color/field_background"
+            android:text=""
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_margin="5dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:backgroundTint="@color/field_background"
+            android:text=""
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_margin="5dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:backgroundTint="@color/field_background"
+            android:text=""
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_margin="5dp"
+            android:width="100dp"
+            android:height="100dp"
+            android:backgroundTint="@color/field_background"
+            android:text=""
+            android:textColor="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </GridLayout>
+    <Button
+        android:id="@+id/btnStartAgain"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:height="60dp"
+        android:text="Start again"/>
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/btn_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:height="60dp"
+        android:text="Reset scores"/>
+</LinearLayout>
