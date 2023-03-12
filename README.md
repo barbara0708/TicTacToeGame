@@ -2,7 +2,7 @@
 ## Table of contents
 * [Introduction](#introduction)
 * [Technologies](#technologies)
-* [Setup](#setup)
+* [Illustration](#illustration)
 
 ## Introduction
     My simple TicTacToe Game was created for two players. One player plays X and the other O. 
@@ -14,4 +14,5 @@
 * Android Studio
 * Java 17
 
+##Illustration
 ![Image](./play.png)
